@@ -1,0 +1,1 @@
+A restaurant page as an excercise for using Webpack
