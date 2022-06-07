@@ -11,28 +11,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ about)
 /* harmony export */ });
+/* harmony import */ var _earth_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./earth.png */ "./src/earth.png");
+
+
 function about() {
   const div = document.createElement('div');
   div.classList.add('about');
-
-
-  const babyA = document.createElement('p');
-  babyA.classList.add('about-section');
-  babyA.innerHTML = 'All natural ingredients';
   
   const babyB = document.createElement('p');
   babyB.classList.add('about-section');
-  babyB.innerHTML = 'The best chefs';
-
+  babyB.innerHTML = 'All natural <br> ingredients &';
 
   const babyC = document.createElement('p');
   babyC.classList.add('about-section');
-  babyC.innerHTML = 'Only for amazing people (you)';
+  babyC.innerHTML = 'The Best View on <br> earth';
 
+  const earth = new Image(220, 220);
+  earth.src = _earth_png__WEBPACK_IMPORTED_MODULE_0__;
+  earth.classList.add('about-pic');
 
-  div.append(babyA, babyB, babyC);
+  div.append(earth, babyB, babyC,);
   document.body.appendChild(div);
 }
+
+/***/ }),
+
+/***/ "./src/earth.png":
+/*!***********************!*\
+  !*** ./src/earth.png ***!
+  \***********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "d5719b6ead96e3434fd7.png";
 
 /***/ })
 
@@ -42,4 +52,4 @@ function about() {
 /******/ var __webpack_exports__ = (__webpack_exec__("./src/about.js"));
 /******/ }
 ]);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYWJvdXQuYnVuZGxlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7QUFBZTtBQUNmO0FBQ0E7OztBQUdBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOzs7QUFHQTtBQUNBO0FBQ0E7OztBQUdBO0FBQ0E7QUFDQSIsInNvdXJjZXMiOlsid2VicGFjazovL3Jlc3RvLXBhZ2UvLi9zcmMvYWJvdXQuanMiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gYWJvdXQoKSB7XG4gIGNvbnN0IGRpdiA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2RpdicpO1xuICBkaXYuY2xhc3NMaXN0LmFkZCgnYWJvdXQnKTtcblxuXG4gIGNvbnN0IGJhYnlBID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgncCcpO1xuICBiYWJ5QS5jbGFzc0xpc3QuYWRkKCdhYm91dC1zZWN0aW9uJyk7XG4gIGJhYnlBLmlubmVySFRNTCA9ICdBbGwgbmF0dXJhbCBpbmdyZWRpZW50cyc7XG4gIFxuICBjb25zdCBiYWJ5QiA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3AnKTtcbiAgYmFieUIuY2xhc3NMaXN0LmFkZCgnYWJvdXQtc2VjdGlvbicpO1xuICBiYWJ5Qi5pbm5lckhUTUwgPSAnVGhlIGJlc3QgY2hlZnMnO1xuXG5cbiAgY29uc3QgYmFieUMgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdwJyk7XG4gIGJhYnlDLmNsYXNzTGlzdC5hZGQoJ2Fib3V0LXNlY3Rpb24nKTtcbiAgYmFieUMuaW5uZXJIVE1MID0gJ09ubHkgZm9yIGFtYXppbmcgcGVvcGxlICh5b3UpJztcblxuXG4gIGRpdi5hcHBlbmQoYmFieUEsIGJhYnlCLCBiYWJ5Qyk7XG4gIGRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoZGl2KTtcbn0iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYWJvdXQuYnVuZGxlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7O0FBQWdDOztBQUVqQjtBQUNmO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQSxjQUFjLHVDQUFLO0FBQ25COztBQUVBO0FBQ0E7QUFDQSIsInNvdXJjZXMiOlsid2VicGFjazovL3Jlc3RvLXBhZ2UvLi9zcmMvYWJvdXQuanMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEVhcnRoIGZyb20gJy4vZWFydGgucG5nJztcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gYWJvdXQoKSB7XG4gIGNvbnN0IGRpdiA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2RpdicpO1xuICBkaXYuY2xhc3NMaXN0LmFkZCgnYWJvdXQnKTtcbiAgXG4gIGNvbnN0IGJhYnlCID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgncCcpO1xuICBiYWJ5Qi5jbGFzc0xpc3QuYWRkKCdhYm91dC1zZWN0aW9uJyk7XG4gIGJhYnlCLmlubmVySFRNTCA9ICdBbGwgbmF0dXJhbCA8YnI+IGluZ3JlZGllbnRzICYnO1xuXG4gIGNvbnN0IGJhYnlDID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgncCcpO1xuICBiYWJ5Qy5jbGFzc0xpc3QuYWRkKCdhYm91dC1zZWN0aW9uJyk7XG4gIGJhYnlDLmlubmVySFRNTCA9ICdUaGUgQmVzdCBWaWV3IG9uIDxicj4gZWFydGgnO1xuXG4gIGNvbnN0IGVhcnRoID0gbmV3IEltYWdlKDIyMCwgMjIwKTtcbiAgZWFydGguc3JjID0gRWFydGg7XG4gIGVhcnRoLmNsYXNzTGlzdC5hZGQoJ2Fib3V0LXBpYycpO1xuXG4gIGRpdi5hcHBlbmQoZWFydGgsIGJhYnlCLCBiYWJ5QywpO1xuICBkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGRpdik7XG59Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9
