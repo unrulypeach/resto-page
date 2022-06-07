@@ -68,6 +68,24 @@
   height: var(--full-height);
   background-color: var(--main-bg);
   font-family: 'BebasNeue';
+  font-size: clamp(1rem, 15vw, 175px);
+  line-height: 96%;
+}
+.about-section{
+  position: relative;
+  top: 3vh;
+  left: 2vw;
+  width: fit-content;
+}
+/* .about-pic:first-of-type{
+  position: absolute;
+  top: 10vh;
+  right: 20vw;
+} */
+.about-pic:last-of-type{
+  position: absolute;
+  bottom: 4vh;
+  left: 30vw;
 }
 .menu-container{
   font-family: 'BebasNeue';
@@ -101,4 +119,10 @@
 .address{
   font-size: 28px;
   left: 21vw;
+}
+.footer{
+  font-family: 'BebasNeue';
+  position: absolute;
+  bottom: 2px;
+  text-align: center;
 }
