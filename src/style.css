@@ -15,7 +15,7 @@
 .navBarContainer{
   display: flex;
   justify-content: center;
-
+  align-items: baseline;
   margin-top: 2vh;
 }
 .navBarItem{
@@ -26,6 +26,14 @@
   text-align: center;
   font-size: 2em;
 }
+.navBarItem:last-child{
+  display: flex;
+  justify-content: flex-end;
+}
+.social-media-icon{
+  margin: 5px;
+  margin-left: 10px;
+}
 .homepage{
   background-color: var(--main-bg);
   /* background: url('./main-page.png') no-repeat fixed center; */
@@ -33,11 +41,17 @@
   height: var(--full-height);
   font-family: 'BebasNeue';
 }
+.homepage-photo{
+  position: absolute;
+  top: 20vh;
+  left: 40vw;
+}
 .homepage>h1{
   position: relative;
-  top: 50vh;
   text-align: center;
-  font-size: 4em;
+  top: 47vh;
+  font-size: 150px;
+  z-index: 2;
 }
 .homepage>.menu-btn{
   font-family: 'BebasNeue';
@@ -45,7 +59,7 @@
   position: relative;
   display: block;
   margin: auto;
-  top: 50vh;
+  top: 45vh;
   border: none;
   width: 220px;
   height: 50px;
@@ -70,20 +84,21 @@
 }
 .visit{
   height: var(--full-height);
-  background: url('./visit.png') var(--main-bg);
+  background: url('./visit-smoke-cropped.png') var(--main-bg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   font-family: 'BebasNeue';
 }
 .visit-header, .address{
+  display: inline;
   position: relative;
   top: 30vh;
-  left: 15vw;
+  left: 20vw;
 }
 .visit-header{
   font-size: 80px;
 }
 .address{
   font-size: 28px;
-  padding-left: 1vw;
+  left: 21vw;
 }

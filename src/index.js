@@ -4,13 +4,14 @@ import homepage from './homepage';
 import menu from './menu';
 import visit from './visit';
 import about from './about';
-// import Background from './main-page.png';
+import IconInsta from './Instagram_Glyph_Black.svg';
+import IconFb from './f_logo_RGB-Black_58.png';
+import IconTwit from './LogoBlack.svg';
 
 function navBar() {
   const liMain = document.createElement('li');
-  liMain.innerHTML = 'Logo';
+  liMain.innerHTML = 'You  X';
   liMain.classList.add('navBarItem');
-  // liMain.onclick = homepage; //also gotta remove previous div
   liMain.addEventListener('click', function(){
     removeExistingDivs();
     homepage();
@@ -36,11 +37,29 @@ function navBar() {
     removeExistingDivs();
     visit();
   })
+
+  const liIcons = document.createElement('li');
+  liIcons.classList.add('navBarItem');
+  //Instagram
+  const iconInst = new Image(21, 21);
+  iconInst.src = IconInsta;
+  iconInst.classList.add('social-media-icon');
+  //fb
+  const iconFb = new Image(21, 21);
+  iconFb.src = IconFb;
+  iconFb.classList.add('social-media-icon');
+  //twit
+  const iconTwit = new Image(21, 21);
+  iconTwit.src = IconTwit;
+  iconTwit.classList.add('social-media-icon');
+
+  liIcons.append(iconTwit, iconInst, iconFb);
+
   const ul = document.createElement('ul');
   ul.classList.add('navBarContainer');
-  ul.append(liMain, liAbout, liMenu, liVisit);
+  ul.append(liMain, liAbout, liMenu, liVisit, liIcons);
 
-  return ul
+  document.body.appendChild(ul);
 }
 function removeExistingDivs() {
   const onlyDiv = document.getElementsByTagName('div')[0];
@@ -48,5 +67,7 @@ function removeExistingDivs() {
 }
 
 
-document.body.appendChild(navBar());
+navBar();
 homepage();
+
+export {removeExistingDivs};

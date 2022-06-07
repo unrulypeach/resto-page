@@ -8,7 +8,7 @@ export default function visit() {
 
   const address = document.createElement('p');
   address.classList.add('address');
-  address.innerHTML = ' 001 EVEREST MT. <br> 000-0001'
+  address.innerHTML = '<br> 001 EVEREST MT. <br> (000) 000-0001'
 
   const image = document.createElement('div');
 
