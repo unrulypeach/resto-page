@@ -68,7 +68,7 @@
   height: var(--full-height);
   background-color: var(--main-bg);
   font-family: 'BebasNeue';
-  font-size: clamp(1rem, 15vw, 175px);
+  font-size: clamp(1rem, 15vw, 150px);
   line-height: 96%;
 }
 .about-section{
@@ -77,15 +77,10 @@
   left: 2vw;
   width: fit-content;
 }
-/* .about-pic:first-of-type{
+.about-pic{
   position: absolute;
-  top: 10vh;
-  right: 20vw;
-} */
-.about-pic:last-of-type{
-  position: absolute;
-  bottom: 4vh;
-  left: 30vw;
+  bottom: 8vh;
+  left: 60vw;
 }
 .menu-container{
   font-family: 'BebasNeue';
@@ -93,12 +88,20 @@
   height: var(--full-height);
 }
 .menu{
+  text-align: center;
   position: relative;
   margin: auto;
   top: 10vh;
   width: 88vw;
   height: 65vh;
   background-color: rgb(190, 212, 190);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-section{
+  margin-right: 10px;
 }
 .visit{
   height: var(--full-height);

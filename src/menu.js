@@ -1,3 +1,7 @@
+import App from './appy.png';
+import Main from './entree.png';
+import Dessert from './dessert.png';
+
 export default function menu() {
   const outerDiv = document.createElement('div');
   outerDiv.classList.add('menu-container');
@@ -7,38 +11,53 @@ export default function menu() {
 
   const appHead = document.createElement('h2');
   appHead.classList.add('menu-heading');
-  appHead.innerHTML = 'APPETIZERS';
+  appHead.innerHTML = 'APPETIZER';
 
-  const appA = document.createElement('p');
-  appA.classList.add('menu-item');
-  appA.innerHTML ='appetizer 1'
+  const appCaption = document.createElement('p');
+  appCaption.classList.add('menu-item');
+  appCaption.innerHTML ='ooooh whats that?'
 
-  const appB = document.createElement('p');
-  appB.classList.add('menu-item');
-  appB.innerHTML ='appetizer 2'
+  const appPic = new Image(250, 250);
+  appPic.src = App;
+  appPic.classList.add('menu-item-photo');
 
   const mainHead = document.createElement('h2');
   mainHead.classList.add('menu-heading');
-  mainHead.innerHTML = 'ENTREES'
+  mainHead.innerHTML = 'ENTREE'
 
-  const mainA = document.createElement('p');
-  mainA.classList.add('menu-item');
-  mainA.innerHTML ='entree 1'
+  const mainCaption = document.createElement('p');
+  mainCaption.classList.add('menu-item');
+  mainCaption.innerHTML = `i'm not like other food food`
 
-  const mainB = document.createElement('p');
-  mainB.classList.add('menu-item');
-  mainB.innerHTML ='entree 2'
+  const mainPic = new Image(250, 250);
+  mainPic.src = Main;
+  mainPic.classList.add('menu-item-photo');
 
   const desHead = document.createElement('h2');
   desHead.classList.add('menu-heading');
   desHead.innerHTML = 'DESSERT'
 
-  const dessertA = document.createElement('p');
-  dessertA.classList.add('menu-item');
-  dessertA.innerHTML ='dessert 1'
+  const dessertCaption = document.createElement('p');
+  dessertCaption.classList.add('menu-item');
+  dessertCaption.innerHTML ='finger lickin gud'
 
+  const dessertPic = new Image(250, 250);
+  dessertPic.src = Dessert;
+  dessertPic.classList.add('menu-item-photo')
 
-  innerDiv.append(appHead, appA, appB, mainHead, mainA, mainB, desHead, dessertA);
-  outerDiv.append(innerDiv);
+  const appSec = document.createElement('div');
+  appSec.classList.add('menu-section');
+  appSec.append(appHead, appPic, appCaption);
+
+  const mainSec = document.createElement('div');
+  mainSec.classList.add('menu-section');
+  mainSec.append(mainHead, mainPic, mainCaption);
+
+  const desSec = document.createElement('div');
+  desSec.classList.add('menu-section');
+  desSec.append(desHead, dessertPic, dessertCaption);
+
+  innerDiv.append( appSec, mainSec, desSec);
+  outerDiv.append(innerDiv)
   document.body.appendChild(outerDiv);
 }

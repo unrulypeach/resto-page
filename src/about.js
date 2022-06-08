@@ -12,7 +12,7 @@ export default function about() {
   babyC.classList.add('about-section');
   babyC.innerHTML = 'The Best View on <br> earth';
 
-  const earth = new Image(220, 220);
+  const earth = new Image(500, 500);
   earth.src = Earth;
   earth.classList.add('about-pic');
 
